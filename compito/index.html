@@ -3,7 +3,8 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Store</title>
+    <meta name="description" content="Accessories (hand)made with &#10084; from Tuscany, Italy" />
+    <title>Alice in Wondercraft &#8211; Handmade accessories</title>
     <link
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css"
       rel="stylesheet"
@@ -15,9 +16,10 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link href="https://fonts.googleapis.com/css2?family=Sansita+Swashed:wght@300;600&display=swap" rel="stylesheet" />
     <link rel="stylesheet" href="assets/css/style.css" />
+    <link rel="icon" type="image/x-icon" href="assets/images/logo.ico" />
   </head>
   <body>
-    <nav class="navbar navbar-expand-lg bg-warning-subtle px-4 sticky-top border-bottom border-warning">
+    <nav class="navbar navbar-expand-lg bg-warning-subtle px-4 sticky-top border-bottom border-warning border-2">
       <div class="container-fluid">
         <a class="navbar-brand" href="index.html"
           ><img class="rounded-circle" src="assets/images/logo.png" alt="Logo" width="80px"
@@ -61,48 +63,43 @@
       </div>
     </nav>
 
+    <div id="hero">
+      <img src="assets/images/bg.jpg" alt="Background" />
+    </div>
+
     <div class="text-center">
-      <div class="spinner-border text-danger m-5" style="width: 5rem; height: 5rem" role="status">
+      <div class="spinner-border m-5" style="width: 5rem; height: 5rem; color: #8d2d2d" role="status">
         <span class="visually-hidden">Loading...</span>
       </div>
     </div>
 
-    <div class="bg-success-subtle py-2">
-      <h1 class="display-4 fw-light text-center my-4" style="font-family: 'Sansita Swashed', cursive">
+    <div class="py-2">
+      <h1 class="display-4 fw-light text-center my-4 arrivals" style="font-family: 'Sansita Swashed', cursive">
         Alice in Wondercraft
       </h1>
       <h2
-        class="display-6 fw-lighter text-center text-secondary my-3"
-        style="font-family: 'Sansita Swashed', cursive; font-weight: 300; font-size: 2rem"
+        class="display-6 fw-lighter text-center text-tertiary my-3"
+        style="font-family: 'Sansita Swashed', cursive; font-size: 2rem"
       >
         Accessories (hand)made with &#10084; from Tuscany, Italy
       </h2>
     </div>
 
     <div id="content" class="container-fluid px-5 my-5">
-      <div id="riga" class="row row-cols-1 row-cols-sm-2 row-cols-md-2 row-cols-lg-3 row-cols-xl-4">
-        <!--<div class="col">
-          <div class="card">
-            <img class="img-fluid card-img-top" style="object-fit: cover" src="..." alt="Card pic" />
-            <div class="card-body">
-              <h5 class="card-title">Card title</h5>
-              <p class="card-text">Brand</p>
-              <p class="card-text">Prezzo</p>
-              <div class="d-flex justify-content-center gap-2">
-                <a href="detail.html?id=" class="btn btn-primary">Discover more</a>
-                <a href="backoffice.html?id=" class="btn btn-outline-primary">Edit</a>
-              </div>
-            </div>
-          </div>
-        </div>-->
-      </div>
+      <h3
+        class="display-6 fw-lighter text-center my-4 px-4 arrivals"
+        style="font-family: 'Sansita Swashed', cursive; font-size: 3rem"
+      >
+        Latest arrivals
+      </h3>
+      <div id="riga" class="row row-cols-1 row-cols-sm-2 row-cols-md-2 row-cols-lg-3 row-cols-xl-4"></div>
     </div>
 
     <footer
-      class="d-flex justify-content-between flex-wrap align-items-center bg-warning-subtle border-top border-warning p-4"
+      class="d-flex justify-content-between flex-wrap align-items-center bg-warning-subtle border-top border-warning border-2 p-4"
     >
       <div class="d-flex align-items-center gap-3 col-md-4">
-        <img class="rounded-circle" src="assets/images/logo.png" width="30px" alt="Logo" />
+        <a href="#"><img class="rounded-circle" src="assets/images/logo.png" width="30px" alt="Logo" /></a>
         <p class="mb-0 fw-lighter" style="font-size: 0.8rem">
           &#169; 2021
           <span class="ms-2 text-secondary" style="font-family: 'Sansita Swashed', cursive; font-size: 1rem"
@@ -112,18 +109,13 @@
       </div>
       <ul class="nav col-md-4 d-flex justify-content-end align-items-center list-unstyled">
         <li>
-          <a class="text-decoration-none" href="https://www.pinterest.it/aliceinwondercraft_95/" target="_blank"
-            ><img src="assets/images/etsy-logo-grey.png" alt="Etsy" width="35px"></i
-          ></a>
-        </li>
-        <li>
           <a class="text-decoration-none" href="https://www.instagram.com/alice_in_wondercraft/" target="_blank"
-            ><i class="bi bi-instagram text-body-tertiary mx-2"></i
+            ><i class="bi bi-instagram text-body-tertiary mx-2 social"></i
           ></a>
         </li>
         <li>
           <a class="text-decoration-none" href="https://www.pinterest.it/aliceinwondercraft_95/" target="_blank"
-            ><i class="bi bi-pinterest text-body-tertiary mx-2"></i
+            ><i class="bi bi-pinterest text-body-tertiary mx-2 social"></i
           ></a>
         </li>
       </ul>
