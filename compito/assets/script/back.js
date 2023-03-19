@@ -62,7 +62,19 @@ const editForm = () => {
         Authorization: `Bearer ${token}`,
         "Content-type": "application/json",
       },
-    });
+    })
+      .then(response => {
+        if (response.ok) {
+          alert("Form edited successfully");
+          window.location.href = "index.html";
+        } else {
+          throw new Error("An error occurred while editing the form");
+        }
+      })
+      .catch(err => {
+        console.log(err);
+        alert("An error occurred while editing the form");
+      });
   }
 };
 
@@ -74,7 +86,19 @@ const resetForm = () => {
       headers: {
         Authorization: `Bearer ${token}`,
       },
-    });
+    })
+      .then(response => {
+        if (response.ok) {
+          alert("Form resetted successfully");
+          window.location.href = "index.html";
+        } else {
+          throw new Error("An error occurred while resetting the form");
+        }
+      })
+      .catch(err => {
+        console.log(err);
+        alert("An error occurred while resetting the form");
+      });
   }
 };
 
@@ -100,4 +124,9 @@ const deleteProd = () => {
         alert("An error occurred during the deletion of the product");
       });
   }
+};
+
+const isValid = () => {
+  const form = document.querySelector("form");
+  form.classList.add("valid");
 };

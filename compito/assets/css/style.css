@@ -1,0 +1,36 @@
+html {
+  scroll-behavior: smooth;
+}
+
+.card {
+  height: 90%;
+  transform: scale(1);
+  transition: transform 0.3s ease-in-out;
+}
+.card:hover {
+  transform: scale(1.1);
+}
+
+#detail {
+  transition: none;
+}
+
+#detail:hover {
+  transform: none;
+}
+nav img {
+  box-shadow: none;
+  transition: box-shadow 0.3s ease-in-out;
+}
+nav img:hover {
+  box-shadow: 5px 5px 22px -4px #000000;
+}
+
+.titles {
+  transform: scale(1);
+  transition: transform 0.3s ease, color 0.3s ease;
+}
+.titles:hover {
+  color: #8d2d2d;
+  transform: scale(1.1);
+}

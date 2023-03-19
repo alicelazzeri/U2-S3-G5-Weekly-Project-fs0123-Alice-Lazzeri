@@ -14,6 +14,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link href="https://fonts.googleapis.com/css2?family=Sansita+Swashed:wght@300;600&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="assets/css/style.css" />
   </head>
   <body>
     <nav class="navbar navbar-expand-lg bg-warning-subtle px-4 sticky-top border-bottom border-warning">
@@ -22,7 +23,7 @@
           ><img class="rounded-circle" src="assets/images/logo.png" alt="Logo" width="70px"
         /></a>
         <button
-          class="navbar-toggler"
+          class="navbar-toggler titles"
           type="button"
           data-bs-toggle="collapse"
           data-bs-target="#navbarSupportedContent"
@@ -37,7 +38,7 @@
             <li class="nav-item ms-3 fs-5">
               <a
                 style="font-family: 'Sansita Swashed', cursive; font-weight: 300"
-                class="nav-link"
+                class="nav-link titles"
                 aria-current="page"
                 href="index.html"
                 ><i class="bi bi-house-heart me-3"></i>Home</a
@@ -51,31 +52,65 @@
     <div class="container pt-5">
       <h2 id="title" class="display-4 pb-3">Create new product</h2>
       <form onsubmit="handleSub(event)">
-        <div class="mb-3">
-          <label for="name" class="form-label">Product name:</label>
-          <input type="text" class="form-control" id="name" />
+        <div class="form-floating mb-3">
+          <input
+            type="text"
+            class="form-control"
+            id="name"
+            placeholder="Product name"
+            aria-describedby="name"
+            required
+          />
+          <label for="name">Product name</label>
         </div>
-        <div class="mb-3">
-          <label for="brand" class="form-label">Product brand:</label>
-          <input type="text" class="form-control" id="brand" />
+        <div class="form-floating mb-3">
+          <input
+            type="text"
+            class="form-control"
+            id="brand"
+            placeholder="Product brand"
+            aria-describedby="brand"
+            required
+          />
+          <label for="name">Brand</label>
         </div>
-        <div class="mb-3">
-          <label for="imgUrl" class="form-label">URL image:</label>
-          <input type="text" class="form-control" id="imgUrl" />
+        <div class="form-floating mb-3">
+          <input
+            type="text"
+            class="form-control"
+            id="imgUrl"
+            placeholder="URL image"
+            aria-describedby="imgUrl"
+            required
+          />
+          <label for="name">URL image</label>
         </div>
-        <div class="mb-3">
-          <label for="price" class="form-label">Price:</label>
-          <input type="text" class="form-control" id="price" />
+        <div class="form-floating mb-3">
+          <input type="text" class="form-control" id="price" placeholder="Price" aria-describedby="price" required />
+          <label for="name">Price</label>
         </div>
-        <div class="mb-3">
-          <label for="description" class="form-label">Product description:</label>
-          <textarea class="form-control" id="description" rows="3"></textarea>
+        <div class="form-floating mb-3">
+          <textarea
+            class="form-control"
+            id="description"
+            rows="3"
+            style="height: 10rem"
+            placeholder="Product description"
+            aria-describedby="description"
+            required
+          ></textarea>
+          <label for="name">Product description</label>
         </div>
         <div class="d-flex justify-content-around my-5">
-          <button id="create" type="submit" class="btn btn-primary">Create product</button>
-          <button onclick="editForm()" id="edit" type="submit" class="btn btn-success d-none">Edit product</button>
+          <button id="create" type="submit" class="btn btn-outline-success">Create product</button>
+          <button onclick="resetForm()" id="reset" type="reset" class="btn btn-outline-warning">Reset</button>
+          <button onclick="editForm()" id="edit" type="submit" class="btn btn-outline-success d-none">
+            Edit product
+          </button>
           <button onclick="resetForm()" id="reset" type="reset" class="btn btn-outline-warning d-none">Reset</button>
-          <button onclick="deleteProd()" id="delete" type="button" class="btn btn-danger d-none">Delete product</button>
+          <button onclick="deleteProd()" id="delete" type="button" class="btn btn-outline-danger d-none">
+            Delete product
+          </button>
         </div>
       </form>
     </div>
@@ -94,11 +129,16 @@
       </div>
       <ul class="nav col-md-4 d-flex justify-content-end list-unstyled">
         <li>
+          <a class="text-decoration-none" href="https://www.pinterest.it/aliceinwondercraft_95/" target="_blank"
+            ><img src="assets/images/etsy-logo-grey.png" alt="Etsy" width="35px"></i
+          ></a>
+        </li>
+        <li>
           <a class="text-decoration-none" href="https://www.instagram.com/alice_in_wondercraft/" target="_blank"
-            ><i class="bi bi-instagram text-secondary mx-2"></i
+            ><i class="bi bi-instagram text-body-tertiary mx-2"></i
           ></a>
           <a class="text-decoration-none" href="https://www.pinterest.it/aliceinwondercraft_95/" target="_blank"
-            ><i class="bi bi-pinterest text-secondary mx-2"></i
+            ><i class="bi bi-pinterest text-body-tertiary mx-2"></i
           ></a>
         </li>
       </ul>

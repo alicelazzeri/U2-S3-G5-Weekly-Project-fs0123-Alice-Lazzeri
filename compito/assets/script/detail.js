@@ -29,7 +29,7 @@ const createCard = (name, brand, imgUrl, price, description) => {
   col.setAttribute("class", "col");
   row.appendChild(col);
 
-  col.innerHTML = `<div class="card d-flex flex-row align-items-center px-3 py-4 my-5">
+  col.innerHTML = `<div id="detail" class="card d-flex flex-row align-items-center px-3 py-4 my-5 border border-2 border-warning-subtle rounded-3">
     <img class="img-fluid card-img-top p-3" style="object-fit: contain; object-position: top; height: 350px;" src="${imgUrl}" alt="Card pic" />
     <div class="d-flex flex-column">
     <div class="card-body text-start px-3">
@@ -38,6 +38,6 @@ const createCard = (name, brand, imgUrl, price, description) => {
       <p class="card-text text-start fw-lighter px-3">${price}€</p>
       <p class="card-text text-start fw-light px-3">${description}</p>
     </div>
-    <a class="btn btn-outline-warning w-75 mx-auto" href="index.html" role="button">Back to Homepage</a>
+    <a class="btn btn-outline-warning border-1 w-75 mx-auto" href="index.html" role="button">Back to Homepage</a>
   </div>`;
 };
