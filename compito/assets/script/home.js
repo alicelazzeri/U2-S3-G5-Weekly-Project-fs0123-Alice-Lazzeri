@@ -34,8 +34,8 @@ const createCard = (name, brand, imgUrl, id) => {
               <h5 class="card-title my-2 fw-normal">${name}</h5>
               <p class="card-text fw-light">${brand}</p>
               <div class="d-flex justify-content-center gap-2">
-                <a href="detail.html?id=${id}" class="btn btn-warning-subtle text-nowrap">Discover more</a>
-                <a href="backoffice.html?id=${id}" class="btn btn-outline-primary">Edit</a>
+                <a href="detail.html?id=${id}" class="btn btn-outline-success border-1 text-nowrap" >Discover more</a>
+                <a href="backoffice.html?id=${id}" class="btn btn-outline-warning border-1">Edit</a>
               </div>
             </div>
           </div>`;

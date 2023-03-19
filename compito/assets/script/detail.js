@@ -29,14 +29,14 @@ const createCard = (name, brand, imgUrl, price, description) => {
   col.setAttribute("class", "col");
   row.appendChild(col);
 
-  col.innerHTML = `<div class="card d-flex flex-row align-items-center px-3 py-4">
+  col.innerHTML = `<div class="card d-flex flex-row align-items-center px-3 py-4 my-5">
     <img class="img-fluid card-img-top p-3" style="object-fit: contain; object-position: top; height: 350px;" src="${imgUrl}" alt="Card pic" />
     <div class="d-flex flex-column">
     <div class="card-body text-start px-3">
-      <h5 class="card-title text-start display-5 px-3">${name}</h5>
-      <h4 class="card-text text-start px-3">${brand}</h4>
-      <p class="card-text text-start px-3">${price}€</p>
-      <p class="card-text text-start px-3">${description}</p>
+      <h5 class="card-title text-start display-5 px-3 mb-4" style="font-family: 'Sansita Swashed', cursive">${name}</h5>
+      <h4 class="card-text text-start fw-light px-3">${brand}</h4>
+      <p class="card-text text-start fw-lighter px-3">${price}€</p>
+      <p class="card-text text-start fw-light px-3">${description}</p>
     </div>
     <a class="btn btn-outline-warning w-75 mx-auto" href="index.html" role="button">Back to Homepage</a>
   </div>`;
