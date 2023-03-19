@@ -17,25 +17,24 @@ fetch(url, {
     awaitSpinner.style.display = "none";
     const products = data;
     for (const product of products) {
-      createCard(product.name, product.brand, product.imageUrl, product.price, product._id);
+      createCard(product.name, product.brand, product.imageUrl, product._id);
     }
   })
   .catch(err => console.log(err));
 
-const createCard = (name, brand, imgUrl, price, id) => {
+const createCard = (name, brand, imgUrl, id) => {
   const row = document.querySelector("#riga");
   const col = document.createElement("div");
   col.setAttribute("class", "col");
   row.appendChild(col);
 
-  col.innerHTML = `<div class="card-shadow">
-            <img class="img-fluid card-img-top" style="object-fit: cover; object-position: center; height: 200px;" src="${imgUrl}" alt="Card pic" />
+  col.innerHTML = `<div class="card-shadow shadow-lg border border-2 border-warning-subtle rounded-3 p-4 mx-2 my-3">
+            <img class="img-fluid card-img-top rounded-4" style="object-fit: cover; object-position: center; height: 250px;" src="${imgUrl}" alt="Card pic" />
             <div class="card-body text-center">
-              <h5 class="card-title">${name}</h5>
-              <p class="card-text">${brand}</p>
-              <p class="card-text">${price}</p>
+              <h5 class="card-title my-2 fw-normal">${name}</h5>
+              <p class="card-text fw-light">${brand}</p>
               <div class="d-flex justify-content-center gap-2">
-                <a href="detail.html?id=${id}" class="btn btn-primary text-nowrap">Discover more</a>
+                <a href="detail.html?id=${id}" class="btn btn-warning-subtle text-nowrap">Discover more</a>
                 <a href="backoffice.html?id=${id}" class="btn btn-outline-primary">Edit</a>
               </div>
             </div>

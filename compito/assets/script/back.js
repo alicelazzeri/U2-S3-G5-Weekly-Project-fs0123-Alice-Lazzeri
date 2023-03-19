@@ -12,6 +12,7 @@ window.onload = () => {
   if (selectedId) {
     document.getElementById("title").innerText = "Edit Product";
     document.getElementById("edit").classList.remove("d-none");
+    document.getElementById("reset").classList.remove("d-none");
     document.getElementById("delete").classList.remove("d-none");
     document.getElementById("create").classList.add("d-none");
 
@@ -50,6 +51,31 @@ const handleSub = event => {
       "Content-Type": "application/json",
     },
   }).catch(error => console.log(error));
+};
+
+const editForm = () => {
+  const acceptedEdit = confirm("Do you really want to edit the form of the product?");
+  if (acceptedEdit) {
+    fetch(endpoint, {
+      method: "PUT",
+      headers: {
+        Authorization: `Bearer ${token}`,
+        "Content-type": "application/json",
+      },
+    });
+  }
+};
+
+const resetForm = () => {
+  const acceptedReset = confirm("Do you really want to reset the form of the product?");
+  if (acceptedReset) {
+    fetch(endpoint, {
+      method: "DELETE",
+      headers: {
+        Authorization: `Bearer ${token}`,
+      },
+    });
+  }
 };
 
 const deleteProd = () => {

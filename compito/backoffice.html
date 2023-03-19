@@ -63,7 +63,8 @@
         </div>
         <div class="d-flex justify-content-around my-5">
           <button id="create" type="submit" class="btn btn-primary">Create product</button>
-          <button id="edit" type="submit" class="btn btn-success d-none">Edit product</button>
+          <button onclick="editForm()" id="edit" type="submit" class="btn btn-success d-none">Edit product</button>
+          <button onclick="resetForm()" id="reset" type="reset" class="btn btn-outline-warning d-none">Reset</button>
           <button onclick="deleteProd()" id="delete" type="button" class="btn btn-danger d-none">Delete product</button>
         </div>
       </form>
