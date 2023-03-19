@@ -104,7 +104,9 @@
           <label for="name">Product description</label>
         </div>
         <div class="d-flex justify-content-around my-5">
-          <button id="create" type="submit" class="btn btn-outline-success">Create product</button>
+          <button onclick="productCreated()" id="create" type="submit" class="btn btn-outline-success">
+            Create product
+          </button>
           <button onclick="resetForm()" id="reset" type="reset" class="btn btn-outline-warning">Reset</button>
           <button onclick="editForm()" id="edit" type="submit" class="btn btn-outline-success d-none">
             Edit product

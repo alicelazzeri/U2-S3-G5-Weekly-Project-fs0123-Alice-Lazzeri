@@ -126,7 +126,15 @@ const deleteProd = () => {
   }
 };
 
-const isValid = () => {
-  const form = document.querySelector("form");
-  form.classList.add("valid");
+const productCreated = () => {
+  fetch(endpoint, {
+    method: "POST",
+    headers: {
+      Authorization: `Bearer ${token}`,
+      "Content-type": "application/json",
+    },
+  }).then(response => {
+    response = alert("Product created successfully");
+    window.location.href = "index.html";
+  });
 };
