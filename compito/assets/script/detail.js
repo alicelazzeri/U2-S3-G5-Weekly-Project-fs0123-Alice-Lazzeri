@@ -1,5 +1,5 @@
 const token =
-  "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2NDE0MmQ4NmY4MWI0MjAwMTM5YjI3ZGUiLCJpYXQiOjE2NzkwNDM5NzUsImV4cCI6MTY4MDI1MzU3NX0.jL8vO3lkgbFRAK8hnvu1m2qUfL__P_hVOwtM7Z1gCd0";
+  "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2NDE0MmQ4NmY4MWI0MjAwMTM5YjI3ZGUiLCJpYXQiOjE2ODY3MzUxOTQsImV4cCI6MTY4Nzk0NDc5NH0.8-i2kZ0313GRm6pZhNvK5QdFTxcHLomhtF_8kA-GgqU";
 
 const url = "https://striveschool-api.herokuapp.com/api/product/";
 const URLParams = new URLSearchParams(window.location.search);
